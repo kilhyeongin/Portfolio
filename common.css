@@ -1,0 +1,829 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body * {
+    font-family: 'GmarketSansMedium';
+}
+.body {
+    position: relative;
+}
+/* index 시작 */
+
+
+.main_bg {
+    position: relative;
+    width: 1920px;
+    height: 950px;
+    
+}
+
+.background {
+    position: absolute;
+    top: -44px;
+    left: 0;
+}
+.main_bg .background img {
+    width: 1920px;
+    height: 1000px;
+}
+.main_ul {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+}
+.main_ul li {
+    position: relative;
+    padding: 1rem;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main_ul li a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main_ul li p {
+    margin-top: 10px;
+}
+
+.main_p {
+    position: absolute;
+    top: 250px;
+    left: 700px;
+}
+
+.main_p p {
+    padding: 2rem;
+    font-size: 40px;
+    color: #3E3E3E;
+}
+.main_p p:nth-of-type(4) {
+    font-weight: bold;
+    color: black;
+    text-shadow: 5px 3px 3px rgba(0,0,0,0.3);
+}
+.main_img {
+    position: absolute;
+    left: 960px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_img li {
+    position: relative;
+    padding: 1rem 1rem 3px 1rem;
+}
+.main_img li a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.main_img img {
+    width: 40px;
+}
+
+/* index 끝 */
+.hd {
+    position: relative;
+    background-color: white;
+    display: flex;
+    width: 1920px;
+    height: 80px;
+}
+
+.logo img {
+    width: 90px;
+    margin: 15px;
+}
+.menu {
+    display: flex;
+}
+.menu li a{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.menu li p {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    padding: 1.8rem;
+}
+
+.menu li p::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    right: 50%;
+    bottom: 0;
+    height: 5px;
+    transition: .3s;
+    background-color: rgba(0,0,0,0.1);
+    
+}
+
+.menu li p:hover::before {
+    width: 50%;
+}
+
+.menu li p::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    left: 50%;
+    bottom: 0;
+    height: 5px;
+    transition: .3s;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.menu li p:hover::after {
+    width: 50%;
+}
+
+.menu li:nth-of-type(1) p{
+    padding: 30px 55px;
+}
+.menu li:nth-of-type(2) p{
+    padding: 30px 25px;
+}
+
+.menu li:nth-of-type(3) p{
+    padding: 30px 50px;
+}
+
+.menu li:nth-of-type(4) p,
+.menu li:nth-of-type(5) p{
+    padding: 30px 40px;
+}
+
+.ryg {
+    display: flex;
+    position: absolute;
+    right: 100px;
+    top: 30px;
+}
+
+.ryg .red,
+.ryg .yellow,
+.ryg .green {
+    border: 1px solid rgba(0,0,0,2);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: transparent;
+    margin: 0 10px;
+}
+.ryg .red {
+    background-color: red;
+}
+.ryg .yellow {
+    background-color: gold;
+}
+.ryg .green {
+    background-color: lightgreen;
+}
+
+/* secA 시작 */
+.secA {
+    position: relative;
+    height: 881px;
+    overflow: hidden;
+}
+
+.mainhome img{
+    width: 1920px;
+    height: 1000x;
+}
+
+.sun {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 1;
+    opacity: 0.9;
+}
+.suaaan {
+    animation: suaaan 4s 1s infinite linear alternate;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    z-index: 10;
+}
+@-webkit-keyframes suaaan {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        top: -30px;
+        opacity: 0.7;
+    }
+}
+.sunson {
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    z-index: 100;
+}
+.pado1 {
+    position: absolute;
+    top: 282px;
+    left: 1465px;
+    z-index: 100;
+}
+.pado2 {
+    animation: pado2 4s 1s infinite linear alternate;
+    position: absolute;
+    top: 360px;
+    left: 1465px;
+    z-index: 10;
+}
+.pado3 {
+    animation: pado3 4s 1s infinite linear alternate;
+    position: absolute;
+    top: 350px;
+    left: 1465px;
+    z-index: 1;
+}
+
+@-webkit-keyframes pado2 {
+    0% {
+        top: 350px;
+    }
+    100% {
+        top: 363px;
+    }
+}
+@-webkit-keyframes pado3 {
+    0% {
+        top: 350px;
+    }
+    30% {
+        top: 360px;
+    }
+    100% {
+        top: 390px;
+    }
+}
+
+.parasol {
+    position: absolute;
+    bottom: 200px;
+    left: 1550px;
+    width: 90px;
+    transform: rotate(-5eg);
+}
+
+.namoo1 {
+    position: absolute;
+    left: 180px;
+    bottom: 70px;
+}
+
+.namoo2 {
+    position: absolute;
+    top: 250px;
+    left: 790px;
+    width: 60px;
+}
+.namoo3 {
+    position: absolute;
+    top: 280px;
+    left: 1150px;
+    width: 100px;
+}
+.car {
+    position: absolute;
+    top: 250px;
+    left: 955px;
+    width: 0px;
+    animation: car 7s 3s infinite linear normal;
+}
+@-webkit-keyframes car {
+    from {
+        top: 250px;
+    }
+    
+    to {
+        top: 900px;
+        width: 500px;
+        left: 700px;
+    }
+}
+.frontend {
+    position: absolute;
+    top: 200px;
+    left: 800px;
+    font-size: 4rem;
+    color: white;
+    z-index: 10000;
+    text-shadow: 10px 10px 10px #006DFF;
+}
+.textp {
+    position: absolute;
+    top: 520px;
+    left: 485px;
+    color: #535353;
+    text-shadow: 5px 10px 5px rgba(0,0,0,0.5);
+    -webkit-text-stroke: 1px #CFCFCF;
+    font-size: 25px;
+    transform: rotate(-41deg);
+}
+.textp2 {
+    position: absolute;
+    top: 560px;
+    font-size: 25px;
+    left: 1190px;
+    transform: rotate(41.5deg);
+    color: #535353;
+    text-shadow: 5px 10px 5px rgba(0,0,0,0.5);
+    -webkit-text-stroke: 1px #CFCFCF;
+}
+
+
+/* secA 끝 */
+
+/* ------------------------서브페이지 시작----------------------- */
+.subhd {
+    position: relative;
+    width: 1903px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.sublogo {
+    position: relative;
+    height: 70px;
+    width: 130px;
+    padding-top: 18px;
+    margin-left: 20px;
+}
+.sublogo a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.input {
+    position: relative;
+    margin-left: 550px;
+}
+#erer {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    cursor: pointer;
+    color: rgba(0,0,0,0.4);
+}
+
+.bt {
+    position: absolute;
+    left: 499px;
+    width: 70px;
+    height: 40px;
+    border: 1px solid rgba(0,0,0,0.6);
+    border-radius: 0 3px 3px 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.bt:hover {
+    background-color: #eaeaea;
+}
+
+.icon {
+    position: absolute;
+    right: 40px;
+    width: 90px;
+    height: 40px;
+}
+.icon i {
+    margin-top: 5px;
+    font-size: 25px;
+    color: rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+.myicon {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.side {
+    width: 240px;
+    height: 891px;
+}
+.sidemenu {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    width: 230px;
+    height: 484px;
+}
+
+.sidemenu li {
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.sidemenu li a{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.sidemenu li:hover {
+    background-color: rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+.sidemenu li p {
+    text-align: center;
+    margin-left: 30px;
+}
+.sidemenu li.on {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.signup {
+    position: absolute;
+    bottom: 0;
+}
+.signup li {
+    display: flex;
+    align-items: center;
+    width: 238px;
+    padding-left: 10px;
+    padding: 0.8rem;
+}
+
+.signup li:hover {
+    background-color: rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+.signup li:nth-of-type(1):hover {
+    background-color: transparent;
+    cursor:auto;
+}
+.signup li p {
+    margin-left: 20px;
+}
+
+.modu {
+    position: absolute;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    top: 69px;
+    left: 240px;
+    width: 1620px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    
+}
+.modu button:nth-of-type(1) {
+    margin-left: 500px;
+}
+.modu button {
+    margin: 1rem;
+    width: 60px;
+    height: 30px;
+    border: transparent;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.modu button.on {
+    background-color: black;
+    color: white;
+}
+
+.youtube1 {
+    position: absolute;
+    top: 124px;
+    left: 240px;
+    width: 1680px;
+    height: 837px;
+    background-color: rgba(0,0,0,0.03);
+}
+.youtubgogo {
+    position: absolute;
+    display: flex;
+    width: 1600px;
+    height: 410px;
+    top: 0px;
+    left: 0px;
+}
+.youtubgogo li {
+    padding: 0.84rem;
+}
+
+.youtubgogo li>img {
+    width: 372px;
+}
+.youtubgogo li a {
+    position: absolute;
+    top: 12px;
+    width: 372px;
+    height: 320px;
+}
+.youtubgogo2 li a {
+    position: absolute;
+    top: 12px;
+    width: 372px;
+    height: 320px;
+}
+.yticon {
+    position: relative;
+    margin-top: 10px;
+}
+.yticon p {
+    margin-left: 40px;
+    padding: 0.3rem;
+}
+.yticon p:nth-of-type(2),
+.yticon p:nth-of-type(3) {
+    color: rgba(0,0,0,0.6);
+    font-size: 14px;
+}
+
+.yticon img {
+    position: absolute;
+    width: 35px;
+    top: 10px;
+    left: 0;
+}
+
+.youtubgogo2 {
+    position: absolute;
+    display: flex;
+    top: 410px;
+    left: 0;
+    height: 400px;
+    width: 1620px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.youtubgogo2 li {
+    padding: 0.84rem;
+}
+.youtubgogo2 li>img {
+    width: 372px;
+}
+
+.borderbox1,
+.borderbox2 {
+    border: 1px solid black;
+    width: 370px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ------------------------서브페이지 끝----------------------- */
+/* ------------------------서브페이지2 시작----------------------- */
+
+.sidemenu1 {
+    position:absolute;
+    width: 443px;
+    height: 1000px;
+    left: 1330px;
+}
+.butmodu {
+    height: 84px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.butmodu button{
+    margin-left: 10px;
+    width: 60px;
+    height: 35px;
+    border-radius: 20px;
+    border: transparent;
+    cursor: pointer;
+}
+.butmodu button.on {
+    background-color: black;
+    color: white;
+}
+.sideimg li {
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.sideimg li >p {
+    width: 193px;
+    height: 112px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sideimg li img{
+    width: 193px;
+    height: 112px;
+}
+
+.sidep {
+    padding: 1.05rem;
+}
+.sidep p {
+    margin-bottom: 3px;
+}
+.sidep p:nth-of-type(3),
+.sidep p:nth-of-type(4) {
+    color: rgba(0,0,0,0.6);
+    font-size: 14px;
+}
+
+.brhomebig {
+    position: relative;
+    width: 1330px;
+    height: 695px;
+    
+}
+
+.brhomeimg {
+    position: absolute;
+    left: 138px;
+    border: 1px solid rgba(0,0,0,0.05);
+    background-color: black;
+}
+
+.brhomeimg img{
+    width: 1170px;
+    height: 694px;
+}
+.brhomeimg video{
+    width: 1170px;
+    height: 694px;
+}
+.brhomep {
+    position: absolute;
+    left: 138px;
+    width: 1170px;
+}
+
+
+.brhomediv p {
+    margin-top: 10px;
+}
+
+.brhomediv p:nth-of-type(1) {
+    color: #065fd4;
+    font-size: 12px;
+}
+.brhomediv p:nth-of-type(2) {
+    font-size: 20px;
+}
+
+.good {
+    display: flex;
+    justify-content: space-between;
+    width: 820px;
+    margin-top: 10px;
+}
+.good p:nth-of-type(1) {
+    color: rgba(0,0,0,0.6);
+}
+.good p:nth-of-type(2) {
+    color: #065fd4;
+}
+.good div {
+    cursor: pointer;
+}
+.good div i {
+    margin-left: 20px;
+}
+.beramodum {
+    display: flex;
+}
+
+.beragoodoc {
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.4);
+    width: 585px;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.beragoodoc> img:nth-of-type(1) {
+    width: 35px;
+    height: 35px;
+}
+.beragoodoc> img:nth-of-type(2) {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+.beragoodoc div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.beragoodoc div span:nth-of-type(2) {
+    font-size: 12px;
+    color: rgba(0,0,0,0.5);
+}
+.berapimg {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 12px;
+    border: 1px solid rgba(0,0,0,0.4);
+    padding: 0.3rem;
+    width: 570px;
+    border-radius: 10px;
+}
+.berapimg span {
+    border-right: 1px solid rgba(0,0,0,0.4);
+    width: 40px;
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 0.3rem;
+}
+.berapimg p {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.datgle {
+    position: absolute;
+    top: 950px;
+    width: 1170px;
+    left: 138px;
+    height: 1000px;
+}
+.policeA {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.datgle > p {
+    font-size: 20px;
+}
+.wit {
+    margin-top: 20px;
+    display: flex;
+
+}
+.wit input {
+    margin-left: 10px;
+    border:transparent;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    width: 1200px;
+}
+
+.onedatgle {
+    display: flex;
+    margin-top: 50px;
+
+}
+
+.onedatgle img {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+.onedatgle div div:nth-of-type(1) {
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+
+.onedatgle div div:nth-of-type(1) span {
+    margin-left: 10px;
+    font-size: 12px;
+    color: rgba(0,0,0,0.5);
+}
+.onedatgle div div:nth-of-type(2) {
+    margin-top: 5px;
+    cursor: pointer;
+} 
+#samsam {
+    margin-left: 20px;
+}
+
+/* ------------------------서브페이지2 끝----------------------- */
